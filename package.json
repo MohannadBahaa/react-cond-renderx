@@ -1,0 +1,27 @@
+{
+  "name": "react-cond-renderx",
+  "version": "1.0.0",
+  "description": "A utility for efficiently handling condational react rendering.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo 'test'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MohnnadBahaa/react-cond-renderx.git"
+  },
+  "keywords": [
+    "react",
+    "conditional",
+    "rendering",
+    "jsx",
+    "js",
+    "typescript"
+  ],
+  "author": "Mohannad Bahaa <mhd.almusa@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MohnnadBahaa/react-cond-renderx/issues"
+  },
+  "homepage": "https://github.com/MohnnadBahaa/react-cond-renderx#readme"
+}
