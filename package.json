@@ -4,6 +4,10 @@
   "description": "A utility for efficiently handling condational react rendering.",
   "main": "dist/index.js",
   "scripts": {
+    "clean": "rm -rf dist",
+    "compile": "tsc -d",
+    "lint": "tslint --project tsconfig.json {src}/**/*.ts && prettier-check --ignore-path .gitignore src/**/*.ts",
+    "prettier": "prettier --write --ignore-path .gitignore src/**/*.ts",
     "test": "echo 'test'"
   },
   "repository": {
