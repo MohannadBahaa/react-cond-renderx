@@ -1,0 +1,52 @@
+{
+  "name": "react-cond-renderx",
+  "version": "1.0.0",
+  "description": "A utility for efficiently handling condational react rendering.",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "compile": "tsc -d && yarn run minify",
+    "minify": "terser -c -m --source-map \"content='./dist/index.js.map',url='index.min.js.map'\" -o dist/index.min.js -- dist/index.js",
+    "pretest": "npm run clean && npm run compile",
+    "test": "echo 'test'",
+    "posttest": "npm run lint",
+    "lint": "tslint --project tsconfig.json {src}/**/*.ts && prettier-check --ignore-path .gitignore src/**/*.ts",
+    "prettier": "prettier --write --ignore-path .gitignore src/**/*.ts",
+    "prepublishOnly": "npm run compile",
+    "prerelease": "npm run test",
+    "semantic-release": "semantic-release"
+  },
+  "devDependencies": {
+    "husky": "4.2.5",
+    "prettier": "2.0.5",
+    "prettier-check": "2.0.0",
+    "pretty-quick": "2.0.1",
+    "rimraf": "3.0.2",
+    "semantic-release": "17.1.1",
+    "terser": "5.0.0",
+    "ts-loader": "8.0.2",
+    "ts-node": "8.10.2",
+    "tslint": "5.4.0",
+    "tslint-config-prettier": "1.18.0",
+    "tslint-config-standard": "9.0.0",
+    "typescript": "3.9.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MohnnadBahaa/react-cond-renderx.git"
+  },
+  "keywords": [
+    "react",
+    "conditional",
+    "rendering",
+    "jsx",
+    "js",
+    "typescript"
+  ],
+  "author": "Mohannad Bahaa <mhd.almusa@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MohnnadBahaa/react-cond-renderx/issues"
+  },
+  "homepage": "https://github.com/MohnnadBahaa/react-cond-renderx#readme"
+}
