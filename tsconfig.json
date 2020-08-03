@@ -1,21 +1,18 @@
 {
-    "compilerOptions": {
-        "target": "es5",
-        "module": "commonjs",
-        "moduleResolution": "node",
-        "noUnusedLocals": true,
-        "rootDir": "src",
-        "outDir": "dist",
-        "sourceMap": true,
-        "strict": true,
-        "lib": [
-            "dom",
-            "es2017"
-        ],
-        "skipLibCheck": true
-    },
-    "exclude": [
-        "node_modules",
-        "dist"
-    ]
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "rootDir": "src",
+    "outDir": "dist",
+    "sourceMap": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    // "experimentalDecorators": true,        /* Enables experimental support for ES7 decorators. */
+    // "emitDecoratorMetadata": true,
+    "lib": ["dom", "es2017"],
+    "skipLibCheck": true
+  },
+  "exclude": ["node_modules", "dist"]
 }
