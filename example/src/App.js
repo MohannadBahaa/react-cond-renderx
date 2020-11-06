@@ -1,4 +1,4 @@
-import Rcrx from "./dist";
+import Rcrx from "../../dist";
 import logo from "./logo.svg";
 import "./App.css";
 import Odd from "./Odd";
