@@ -1,10 +1,26 @@
 import React from "react";
-type PredicateType = () => boolean;
-type ComponentsType = Array<{ comp: any; props: any }>;
-type ParamsType = { predicate: PredicateType; components: ComponentsType };
 
-function rcrx(params: ParamsType) {
-  if (params.predicate()) {
+/**
+ * @description
+ * @interface Rcrx
+ */
+interface Rcrx {
+  predicate: boolean;
+  components: Array<{ comp: any; props: any }>;
+}
+
+/**
+ * @description
+ * @param {Rcrx} params
+ * @returns
+ */
+function predicate(params: Rcrx) {
+  let _isBoolean = typeof params.predicate === "boolean";
+  return _isBoolean && params.predicate;
+}
+
+function exec(params: Rcrx) {
+  if (predicate(params)) {
     return React.cloneElement(
       params.components[0].comp,
       params.components[0].props,
@@ -18,3 +34,5 @@ function rcrx(params: ParamsType) {
     );
   }
 }
+
+export { predicate, exec };
